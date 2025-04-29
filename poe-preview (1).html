@@ -1,0 +1,173 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f8ff;
+        }
+        .poster {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            color: #1e90ff;
+            padding: 20px;
+            border-bottom: 2px dashed #87ceeb;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f8ff;
+            border-radius: 10px;
+        }
+        .route {
+            background: #e6f3ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #1e90ff;
+        }
+        .important {
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        .deadline {
+            background: #1e90ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .decoration {
+            color: #87ceeb;
+            font-size: 24px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .vote-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #e6f3ff;
+            border-radius: 15px;
+            animation: pulse 2s infinite;
+        }
+        .vote-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #1e90ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(30,144,255,0.2);
+        }
+        .vote-button:hover {
+            background: #187bcd;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30,144,255,0.3);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        .qr-code {
+            width: 120px;
+            height: 120px;
+            margin: 15px auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #1e90ff;
+        }
+        .qr-code-canvas {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <h1>✈️ 2025年公司旅游报名 🌍</h1>
+            <p>让我们一起创造美好的回忆</p>
+            <div class="decoration">❋ ❋ ❋</div>
+        </div>
+
+        <div class="section">
+            <h2>📝 活动安排</h2>
+            <p>本次活动适用于全体正式员工</p>
+            <p>• 每人旅游福利：<span class="important">1500元</span>经费</p>
+            <p>• 超出部分需自行支付</p>
+            <p>• 仅限参与一次，不可转让</p>
+            <p>• 需占用工作日请申请年假</p>
+            <p class="important">活动截止日期：2025年12月31日</p>
+        </div>
+
+        <div class="section">
+            <h2>🗺️ 确认路线</h2>
+            <div class="route">
+                <h3>上海出发：恩施四天三晚</h3>
+                <p>出发日期：2025年6月12日</p>
+                <div class="deadline">报名截止：2025年5月15日</div>
+            </div>
+            <div class="route">
+                <h3>北京出发：五台山徒步</h3>
+                <p>出发日期：2025年5月16日</p>
+                <div class="deadline">报名截止：2025年4月30日</div>
+            </div>
+        </div>
+
+        <div class="vote-section">
+            <h2>🎯 参与路线投票</h2>
+            <p>我们正在筹备更多精彩路线，快来投票选择心仪的目的地吧！</p>
+            <p class="important">投票截止日期：2025年5月6日</p>
+            <a href="https://tp.wjx.top/vm/t1ZEEGC.aspx" class="vote-button">立即投票</a>
+            <div class="qr-code">
+                <canvas class="qr-code-canvas"></canvas>
+            </div>
+            <p style="font-size: 14px; color: #666;">扫描二维码或点击按钮参与投票</p>
+        </div>
+
+        <div class="section">
+            <h2>📌 活动说明</h2>
+            <p>• 每条线路需至少20人参与</p>
+            <p>• 参与者需来自至少三个不同部门</p>
+            <p>• 仅限员工本人及家属参加</p>
+            <p>• 必须购买全程人身意外险和公共交通意外伤害险</p>
+            <p class="important">请全程注意安全！</p>
+        </div>
+
+        <div class="decoration">✿ ✿ ✿</div>
+    </div>
+
+    <script>
+        // 简单的二维码模拟绘制
+        const canvas = document.querySelector('.qr-code-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 100;
+        canvas.height = 100;
+        
+        // 绘制简单的二维码图案
+        ctx.fillStyle = '#000';
+        for(let i = 0; i < 10; i++) {
+            for(let j = 0; j < 10; j++) {
+                if(Math.random() > 0.5) {
+                    ctx.fillRect(i*10, j*10, 8, 8);
+                }
+            }
+        }
+    </script>
+
+
+</body></html>
